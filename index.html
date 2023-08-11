@@ -1,160 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>HTML Product Grid View</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
 
-        <!-- Favicons -->
-        <link href="img/favicon.ico" rel="icon">
-        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-        
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap" rel="stylesheet"> 
+<head>
+    <meta charset="utf-8">
+    <title>Aashray ~ AP</title>
 
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="AP.png" , type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-        <!-- Main Stylesheet File -->
-        <link href="style.css" rel="stylesheet">
-    </head>
+    <!-- Main Stylesheet File -->
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        Integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</head>
 
-    <body>
-        <!-- Grid Style 1 Start -->
-        <div class="grid-title">
-            <h2>Products Page</h2>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="AP.png" alt="logo" class="logo" style="width: 30px; height: 30px;">
+            </a>
         </div>
-        <div class="grid-title">
-            <!-- <h2>Product Grid Style 4</h2> -->
-            <hr>
-        </div>
-        <div class="product-grid grid-4">
-            <div class="product-item">
-                <div class="product-single">
-                    <div class="product-img">
-                        <!-- <img src="img/product-3.jpg" alt="Product Image"/> -->
-                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMxfHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Sunglasses">
-                        <div class="product-status">
-                            <span>New</span>
-                            <span>Sale</span>
+        <ul class="navbar-menu">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-links">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="about.html" class="navbar-links">About</a>
+            </li>
+            <li class="navbar-item">
+                <a href="contact.html" class="navbar-links">Contact</a>
+            </li>
+        </ul>
+        <label class="toggleButton">
+            <input type="checkbox" id="toggle">
+            <div class="roundButton circle"></div>
+        </label>
+    </nav>
+    <!-- End of Navbar -->
+    
+
+    <div class="page-container">
+        <div class="content-wrap">
+
+            <!-- grid-1 -->
+            <div class="product-grid grid-1">
+                
+                <div class="product-item">
+                    <div class="product-single">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMxfHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt="Sunglasses">
+                            <div class="product-price">$100</div>
                         </div>
-                        <div class="product-price">$100</div>
-                        <div class="product-action">
-                            <a href=""><i class="fa fa-shopping-bag"></i> Add to Wishlist</a>
-                            <a href=""><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h2><a href="">Sunglasses</a></h2>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-content">
-                        <div class="product-title">
-                            <h2><a href="">Product Title</a></h2>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-single">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1609900179119-3ed9f4530eb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQwfHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt="Camera Lens">
+                            <div class="product-price">$100</div>
                         </div>
-                        <div class="product-ratting">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h2><a href="">Camera Lens</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-single">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1604364184152-f3bd80470c45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ5fHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt="i-Phone">
+                            <div class="product-price">$100</div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h2><a href="">i-Phone</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-single">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1518894781321-630e638d0742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
+                                alt="Shoes">
+                            <div class="product-price">$100</div>
+                        </div>
+                        <div class="product-content">
+                            <div class="product-title">
+                                <h2><a href="">Shoes</a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="product-item">
-                <div class="product-single">
-                    <div class="product-img">
-                        <!-- <img src="img/product-5.jpg" alt="Product Image"/> -->
-                        <img src="https://images.unsplash.com/photo-1609900179119-3ed9f4530eb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQwfHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Camera Lens">
-                        <div class="product-status">
-                            <span>New</span>
-                            <span>Sale</span>
-                        </div>
-                        <div class="product-price">$100</div>
-                        <div class="product-action">
-                            <a href=""><i class="fa fa-shopping-bag"></i> Add to Wishlist</a>
-                            <a href=""><i class="fa fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-title">
-                            <h2><a href="">Product Title</a></h2>
-                        </div>
-                        <div class="product-ratting">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                        </div>
-                    </div>
-                </div>
+            <!-- end of grid-1 -->
+
+            <!-- lorem -->
+            <div class="lorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis doloremque voluptatum
+                doloribus numquam excepturi? Sit adipisci iure praesentium vel consequuntur est harum, delectus
+                assumenda in inventore eaque minima magni tenetur placeat similique qui, molestiae autem officiis libero
+                laborum aliquid deleniti. Placeat aliquam, sequi alias incidunt officiis ab. Fuga, dolores quasi magni
+                ex nisi perspiciatis atque voluptate voluptatum, fugiat, animi assumenda explicabo praesentium non optio
+                rerum ipsum tenetur neque expedita. Dolore fuga illum amet, molestias quas cum aperiam at, fugiat,
+                suscipit blanditiis modi soluta sapiente voluptatibus recusandae optio. Sequi fuga voluptatum vel. Ipsam
+                placeat sapiente saepe dolore dolor numquam ullam, sint assumenda, ab, accusamus velit ad consequuntur
+                sed deserunt? A odit accusamus voluptatibus excepturi! Possimus officiis quasi beatae ab rem optio ea
+                culpa cumque cupiditate, quod rerum voluptatibus harum, quo explicabo iste quas accusantium, eaque
+                tenetur consectetur totam? Velit harum voluptatum, qui nemo deleniti ex quibusdam nihil soluta illum
+                dolore quaerat commodi autem nostrum! Aperiam consequuntur necessitatibus tempore maiores perferendis
+                nam incidunt tenetur voluptatum ullam ut eius nemo maxime, ab natus. Excepturi quo, nisi enim omnis
+                inventore eveniet tenetur consectetur dignissimos ab vitae magnam magni consequuntur earum sed quae
+                voluptates non quasi vel, molestias facere blanditiis velit eum? Accusantium earum quo expedita nemo
+                maxime a nobis, asperiores nostrum, sit excepturi nihil, repellat incidunt consequatur odit voluptas id
+                est iusto iste temporibus quisquam saepe cupiditate vero minus explicabo! Molestias, eveniet
+                voluptatibus labore molestiae dolore voluptas facilis error blanditiis dolor vel ab, ea non et corporis
+                omnis reprehenderit deserunt aperiam rem libero ut id sed! Cum placeat, sunt esse tenetur quae
+                voluptates animi consequuntur commodi necessitatibus mollitia facilis hic, excepturi nostrum. Quis, rem
+                excepturi maxime quibusdam enim accusantium in sunt quasi consequatur, incidunt tempore tenetur eveniet
+                id aperiam et. Amet earum quisquam, molestias numquam quia quaerat aliquid quasi similique tempore ipsum
+                doloremque dolorem modi delectus veritatis obcaecati ipsa dolor quod nisi adipisci sit ea voluptatem
+                facilis at. Nostrum magni pariatur ducimus culpa similique ab provident laboriosam inventore praesentium
+                quaerat fugiat est error, molestiae dolore rerum corporis earum deserunt eum libero dolor voluptatum,
+                nisi sunt modi! Quos doloremque fugit, ut doloribus iste sint culpa impedit eveniet optio ullam
+                similique autem, repellendus qui odio dignissimos sunt necessitatibus. Obcaecati sequi nesciunt corporis
+                quam inventore repudiandae molestiae consequatur qui illo est doloribus, rem error ab soluta
+                consequuntur, odit neque vel unde voluptatibus cupiditate. Neque assumenda est veniam corporis fugiat
+                quam velit laudantium natus itaque suscipit dolor facere quibusdam, modi, sit quo dignissimos ad
+                officiis quaerat. Voluptatem deserunt dolorem error optio et nesciunt magni dicta, odit sed minima harum
+                quaerat, rerum aperiam voluptate explicabo nihil velit illum asperiores repellendus magnam quas. Quae
+                neque doloremque ducimus molestias vitae velit id iure mollitia maiores esse quasi, eos quisquam ullam
+                quam quaerat cum aut voluptate, enim aliquid? Magni excepturi, pariatur, optio quos nam minus aut
+                quaerat tenetur magnam doloremque ratione sint expedita incidunt. Officiis dolore voluptates, unde at
+                architecto beatae ab consectetur veritatis earum optio voluptate, quod accusantium placeat consequatur
+                voluptas enim ipsam ipsum delectus eos et laboriosam, pariatur tempore. 
             </div>
-            
-            <div class="product-item">
-                <div class="product-single">
-                    <div class="product-img">
-                        <!-- <img src="img/product-7.jpg" alt="Product Image"/> -->
-                        <img src="https://images.unsplash.com/photo-1604364184152-f3bd80470c45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ5fHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="i-Phone">
-                        <div class="product-status">
-                            <span>New</span>
-                            <span>Sale</span>
-                        </div>
-                        <div class="product-price">$100</div>
-                        <div class="product-action">
-                            <a href=""><i class="fa fa-shopping-bag"></i> Add to Wishlist</a>
-                            <a href=""><i class="fa fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-title">
-                            <h2><a href="">Product Title</a></h2>
-                        </div>
-                        <div class="product-ratting">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="product-item">
-                <div class="product-single">
-                    <div class="product-img">
-                        <!-- <img src="img/product-9.jpg" alt="Product Image"/> -->
-                        <img src="https://images.unsplash.com/photo-1518894781321-630e638d0742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxwcm9kdWN0c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Shoes">
-                        <div class="product-status">
-                            <span>New</span>
-                            <span>Sale</span>
-                        </div>
-                        <div class="product-price">$100</div>
-                        <div class="product-action">
-                            <a href=""><i class="fa fa-shopping-bag"></i> Add to Wishlist</a>
-                            <a href=""><i class="fa fa-shopping-cart"></i> Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-title">
-                            <h2><a href="">Product Title</a></h2>
-                        </div>
-                        <div class="product-ratting">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <!-- footer -->
+            <footer id="footer">
+                <b><i>Originated by AP</i></b>
+            </footer>
+
         </div>
-        <!-- Grid Style 4 End -->
-		<div class="grid-title">
-            <h2>Originated by AP</h2>
-			<br>
-        </div>
-    </body>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
